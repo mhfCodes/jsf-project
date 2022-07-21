@@ -12,10 +12,10 @@ xmlns:h = "http://java.sun.com/jsf/html">
 	            <h1>Weight Converter (pounds to kg)</h1>
 	            <p>Enter weight value in pounds:</p>
 				<label>Pounds</label>						
-				<h:inputText id="weight" />
-	            <p>Your weight in Kilograms is: <span id="result"></span></p>			
+				<h:inputText id="weight" value="#{weightBean.lbsWeight}" />
+				<h:commandButton value="submit" action="response"/>		
 			</h:form>
-		</div>
-		<script src="../js/script.js" />
+		</div><!-- 
+		<script src="../js/script.js" /> -->
 	</h:body>
 </html>
